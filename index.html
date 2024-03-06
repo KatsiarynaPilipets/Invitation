@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай Дарья - наша свадьба</title>
+    <style>
+        .navigation {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-image: url(/images/Photo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 800px;
+      font-size: x-large;
+    }
+
+    nav {
+      background-color: transparent;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .name, h2 {
+      color: #077635;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    h2 {
+
+      margin-bottom: 10px;
+    }
+
+
+    .text, .answers, .timer{
+      font-size: x-large;
+    }
+
+    .text {
+      text-align: center;
+    }
+
+    .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timer > div {
+    margin-bottom: 15px;
+  }
+
+  .QA {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #077635;
+  }
+
+    .schedule {
+
+      text-align: center;
+    }
+
+    div span {
+      color: #077635; /* Цвет сердечка */
+      cursor: pointer;
+      font-size: 30px; /* Размер сердечка */
+      margin-right: 5px;
+    }
+
+
+    .date {
+      font-size: xx-large;
+    }
+
+    #countdown {
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #countdowncontainer {
+      background-color: white;
+      border-radius: 30px;
+      width: 700px;
+      display: flex;
+      justify-content: space-around;
+      margin-top: -45px;
+    }
+
+    .countdown-item {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 10px;
+      text-align: center;
+      background-color: azure;
+      border-radius: 15px;
+      height: 100px;
+      width: 100px;
+      padding: 25px;
+    }
+      </style>
+</head>
+<body>
+  <div class="navigation">
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#invitation">Приглашение</a>
+        <a href="#faq">FAQ</a>
+        <a href="#love-story">Love Story</a>
+        <a href="#schedule">Программа дня</a>
+        <a href="#ceremony">Церемония</a>
+        <a href="#wedding-dinner">Свадебный ужин</a>
+      </nav>
+      </div>
+    
+      <div id="countdown">
+        <div id="countdowncontainer">
+        <div class="countdown-item" id="days">
+          <div id="days-number">0</div>
+          <div>дней</div>
+        </div>
+        <div class="countdown-item" id="hours">
+          <div id="hours-number">0</div>
+          <div>часов</div>
+        </div>
+        <div class="countdown-item" id="minutes">
+          <div id="minutes-number">0</div>
+          <div>минут</div>
+        </div>
+        <div class="countdown-item" id="seconds">
+          <div id="seconds-number">0</div>
+          <div>секунд</div>
+        </div>
+      </div>
+      </div>
+    
+
+      <div>
+        <h1 class = name>
+          НИКОЛАЙ & ДАРЬЯ
+        </h1>
+        <div class="text">
+        <p>Дорогие мама и папа!
+        </p>
+        <p>Любовь - это волшебство. Не мы им правим, но нам по силам его сберечь и сохранить. Жизнь состоит из маленьких счастливых моментов.</p>
+        <p>Мы будем очень рады разделить этот день с вами.</p>
+        <p>Увидимся на нашей свадьбе!</p>
+        </div>
+      </div>
+
+      <div class="questions">
+        <h2>
+          ОТВЕЧАЕМ НА ВАШИ ВОПРОСЫ
+        </h2>
+        <div class="answers">
+        <p class="QA">Есть ли у нас свадебный хештег?</p>
+        <p>Для публикации фотографий с нашей свадьбы воспользуйтесь хештегом #СвадьбаКоляДаша. Это позволит насладиться вашими фотографиями с нашей свадьбы.</p>
+        <p class="QA">Нужно ли дарить цветы?</p>
+        <p>Просим вас не дарить нам цветы, т.к. наша любопытная кошка не позволит нам насладиться их красотой в полной мере. Замените цветы бутылочкой хорошего алкогольного напитка.</p>
+        <p class="QA">Будет ли дресс-код?</p>
+        <p>Мы очень ждем и с удовольствием готовимся к нашему незабываемому дню! Поддержите нас вашими улыбками и объятиями, а также красивыми нарядами в нежных оттенках (Соблюдение дресс-кода желательно, но не обязательно)</p>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <h2>ПРОГРАММА СВАДЕБНОГО ДНЯ</h2>
+        <p class="date">7 июня 2024 г.</p>
+        <div class="timer">
+        <div data-href="https://maps.app.goo.gl/NkV5fTkkjNnXw93h6?g_st=ifm" onclick="openGoogleMaps('https://maps.app.goo.gl/NkV5fTkkjNnXw93h6?g_st=ifm')">
+                    12.20 <span>&#10084;</span>Регистрация в ЗАГСе Советского района г. Минска. <br> Присутствие по желанию. <br> <span style="color: gray; text-decoration: underline; cursor: pointer; font-size: 20px;"> Беларусь, г.Минск, ул. Гамарника, 2</span></div>
+        <div data-href="https://maps.app.goo.gl/Ac5kTY7kjbT1v7dw8?g_st=ifm" onclick="openGoogleMaps('https://maps.app.goo.gl/Ac5kTY7kjbT1v7dw8?g_st=ifm')">15.30 <span>&#10084;</span> <span class="divider"></span> Сбор гостей в ресторане, праздничный фуршет. <br>
+          <span style="color: gray; text-decoration: underline; cursor: pointer; font-size: 20px;">Беларусь, г. Минск, пр-т Победителейб 116</span></div>
+        <div>16.00 <span>&#10084;</span> Свадебная церемония</div>
+        <div>17.00 <span>&#10084;</span>Свадебный ужин</div>
+        <div>23.30 <span>&#10084;</span>Праздничный фейерверк</div>
+        </div>
+      </div>
+
+      <script>
+        // Задайте новую дату и время свадьбы (год, месяц (от 0 до 11), день, час, минута, секунда)
+        var weddingDate = new Date(2024, 5, 7, 12, 0, 0);
+    
+        function updateCountdown() {
+          var currentDate = new Date();
+          var timeDifference = weddingDate - currentDate;
+    
+          if (timeDifference > 0) {
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+            document.getElementById('days-number').innerHTML = days;
+        document.getElementById('hours-number').innerHTML = hours;
+        document.getElementById('minutes-number').innerHTML = minutes;
+        document.getElementById('seconds-number').innerHTML = seconds;
+            
+          } else {
+            document.getElementById('countdown').innerHTML = 'Свадьба уже началась!';
+          }
+        }
+    
+        // Обновление таймера каждую секунду
+        setInterval(updateCountdown, 1000);
+    
+        // Обновление сразу после загрузки страницы
+        updateCountdown();
+
+        function openGoogleMaps(link) {
+      window.open(link, '_blank');
+    }
+
+
+      </script>
+</body>
+</html>
