@@ -40,6 +40,10 @@
       justify-content: center;
     }
 
+    .name {
+      height: 100px;
+    }
+
     .name, h2 {
       color: #077635;
       text-align: center;
@@ -58,6 +62,7 @@
 
     .text {
       text-align: center;
+      height: 300px;
     }
 
     .timer {
@@ -69,6 +74,13 @@
 
   .timer > div {
     margin-bottom: 15px;
+  }
+
+  .heart {
+    display: flex;
+            align-content: center;
+            justify-content: center;
+    height: 300px;
   }
 
   .QA {
@@ -116,7 +128,7 @@
       flex-direction: column;
       margin: 20px 10px;
       text-align: center;
-      background-color: azure;
+      background-color: rgb(195, 238, 200);
       border-radius: 15px;
       height: 100px;
       width: 100px;
@@ -137,6 +149,7 @@
       </nav>
       </div>
     
+      <div class="backgr">
       <div id="countdown">
         <div id="countdowncontainer">
         <div class="countdown-item" id="days">
@@ -159,10 +172,11 @@
       </div>
     
 
-      <div>
+      <div class="about">
         <h1 class = name>
           НИКОЛАЙ & ДАРЬЯ
         </h1>
+        <div class="abo">
         <div class="text">
         <p>Дорогие мама и папа!
         </p>
@@ -170,6 +184,12 @@
         <p>Мы будем очень рады разделить этот день с вами.</p>
         <p>Увидимся на нашей свадьбе!</p>
         </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="heart">
+      <img class="heart" src="/images/heartss.png" alt="hearts">
       </div>
 
       <div class="questions">
