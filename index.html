@@ -52,17 +52,18 @@
     }
 
     .name {
-      color: #077635;
+      color: white;
       text-align: center;
-      margin-top: 100px;
-      font-size: 70px;
+      margin-top: 20px;
+      font-size: 60px;
       font-family: "Florida Vibes", cursive;
     }
 
     .data {
       text-align: center;
-      font-size: 50px;
-      color: #077635;
+      font-size: 30px;
+      color: white;
+      margin-top: -20px;
     }
 
 h2 {
@@ -102,9 +103,7 @@ h2 {
     display: flex;
             align-content: center;
             justify-content: center;
-    height: 300px;
-    margin: 50px;
-    margin-bottom: 100px;
+    height: 450px;
   }
 
   .QA {
@@ -177,6 +176,11 @@ h2 {
       margin: 100px;
     }
 
+    .green img {
+    width: 30%;
+    height: auto;
+    }
+
     .map-container {
       width: 100%;
       height: 400px;
@@ -184,9 +188,34 @@ h2 {
 
     .map-astoria {
       width: 100%;
-      height: 400px;
+      height: 700px;
       margin-top: 250px;
     }
+
+    .adress {
+      font-size: large;
+      text-align: center;
+    }
+
+    .end {
+      height: 500px;
+      background-color: #077635;
+    }
+
+    .nameend {
+      color: white;
+      text-align: center;
+      margin-top: 100px;
+      font-size: 60px;
+      font-family: "Florida Vibes", cursive;
+    }
+
+    .confirm {
+      color: white;
+      padding-top: 130px;
+      font-size: 30px;
+    }
+
       </style>
 </head>
 <body>
@@ -201,7 +230,7 @@ h2 {
         </ul>
       </nav>
       <h1 class = name>
-        НИКОЛАЙ <span style="font-size: 80px;">&#10084;</span> ДАРЬЯ
+        НИКОЛАЙ <span style="font-size: 80px; color: rgb(238, 54, 54);">&#10084;</span> ДАРЬЯ
       </h1>
       <p class="data">07.06.2024</p>
       </div>
@@ -239,15 +268,14 @@ h2 {
         <p>В этот день мы хотим веселиться до упаду, танцевать, пить шампанское и делить нашу радость с самыми родными и близкими людьми!</p>
         <p>Нам будет очень приятно увидеть вас среди гостей!</p>
         <p>Увидимся на нашей свадьбе!</p>
-        <p>Просьба подтвердить свое участие.</p>
         </div>
         </div>
       </div>
       </div>
 
       <div class="photos">
-        <img src="./images/Kolya.png" alt="Kolya">
-        <img src="./images/Dasha.png" alt="Dasha">
+        <img src="./images/kolya.png" alt="Kolya">
+        <img src="./images/dasha.png" alt="Dasha">
       </div>
 
       <div class="questions" id="QA">
@@ -255,20 +283,22 @@ h2 {
           ОТВЕЧАЕМ НА ВАШИ ВОПРОСЫ
         </h2>
         <div class="answers">
+          <p class="QA">Будет ли дресс-код?</p>
+        <p>Мы очень ждем и с удовольствием готовимся к нашему незабываемому дню! Поддержите нас вашими улыбками и объятиями, а также красивыми нарядами в нежных оттенках (Соблюдение дресс-кода желательно, но не обязательно)</p>
+                <p class="QA">Нужно ли дарить цветы?</p>
+        <p>Просим вас не дарить нам цветы, т.к. наша любопытная кошка не позволит нам насладиться их красотой в полной мере. Предлагаем заменить их бутылочкой хорошего алкогольного напитка.</p>
         <p class="QA">Есть ли у нас свадебный хештег?</p>
         <p>Для публикации фотографий с нашей свадьбы воспользуйтесь хештегом #СвадьбаКоляДаша. Это позволит насладиться вашими фотографиями с нашей свадьбы.</p>
-        <p class="QA">Нужно ли дарить цветы?</p>
-        <p>Просим вас не дарить нам цветы, т.к. наша любопытная кошка не позволит нам насладиться их красотой в полной мере. Предлагаем заменить их бутылочкой хорошего алкогольного напитка.</p>
-        <p class="QA">Будет ли дресс-код?</p>
-        <p>Мы очень ждем и с удовольствием готовимся к нашему незабываемому дню! Поддержите нас вашими улыбками и объятиями, а также красивыми нарядами в нежных оттенках (Соблюдение дресс-кода желательно, но не обязательно)</p>
         <p class="QA">Возможно ли приехать на своем автомобиле?</p>
-        <p>Да, на территории ресторана имеется бесплатная парковка. Для бронирования места просим заранее сообщить марку и номер автомобиля.</p>
+        <p>Да, на территории ресторана имеется бесплатная парковка.</p>
+        <p>Будет ли второй день?</p>
+        <p>Да, мы также хотим пригласить вас на второй день нашей свадьбы в место, где природа раскроет свои объятия: свежий воздух за городом, ароматные шашлыки, вкуснейшая уха, звуки музыки и веселые танцы. Оставайтесь вместе, чтобы второй день стал незабываемым продолжением.</p>
       </div>
       </div>
 
       
       <div class="heart">
-        <img class="heart" src="./images/heartss.png" alt="hearts">
+        <img class="heart" src="./images/greenhearts.png" alt="hearts">
         </div>
 
       <div class="schedule" id="schedule">
@@ -277,32 +307,41 @@ h2 {
         <div class="timer">
         <div data-href="https://maps.app.goo.gl/LCDwskUGtYGwgiHY9" onclick="openGoogleMaps('https://maps.app.goo.gl/LCDwskUGtYGwgiHY9')">
                     12.20 <span>&#10084;</span>Регистрация в ЗАГСе Советского района г. Минска. <br> Присутствие по желанию. <br> <span style="color: gray; text-decoration: underline; cursor: pointer; font-size: 20px;"> Беларусь, г.Минск, ул. Гамарника, 2</span></div>
-        <div data-href="https://maps.app.goo.gl/dwQdeFG6sEdh2xPY6" onclick="openGoogleMaps('https://maps.app.goo.gl/dwQdeFG6sEdh2xPY6')">15.30 <span>&#10084;</span> <span class="divider"></span> Сбор гостей в ресторане, праздничный фуршет. <br>
+        <div data-href="https://maps.app.goo.gl/dwQdeFG6sEdh2xPY6" onclick="openGoogleMaps('https://maps.app.goo.gl/dwQdeFG6sEdh2xPY6')">15.30 <span>&#10084;</span> <span class="divider"></span> Сбор гостей в ресторане Astoria Riverside, праздничный фуршет. <br>
           <span style="color: gray; text-decoration: underline; cursor: pointer; font-size: 20px;">Беларусь, г. Минск, пр-т Победителейб 116</span></div>
         <div>16.00 <span>&#10084;</span> Свадебная церемония</div>
         <div>17.00 <span>&#10084;</span>Свадебный ужин</div>
         <div>23.30 <span>&#10084;</span>Праздничный фейерверк</div>
         </div>
 
+        <div class="green">
+          <img src="./images/heart.png" alt="hearts">
+        </div>
+
         <div class="map-container" id="zags">
           <h2>ЦЕРЕМОНИЯ</h2>
-          <p>ЗАГС Советского района г. Минска</p>
-          <p>г. Минск, ул. Гамарника, 2</p>
+          <p class="adress">ЗАГС Советского района г. Минска</p>
+          <p class="adress">г. Минск, ул. Гамарника, 2</p>
           <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.5972137050517!2d27.617448576997393!3d53.95666172888304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf49b7b52a03%3A0xb2fa2d0071cca5b2!2z0JfQkNCT0KEg0KHQvtCy0LXRgtGB0LrQvtCz0L4g0YDQsNC50L7QvdCwINCzLiDQnNC40L3RgdC60LA!5e0!3m2!1sru!2sca!4v1710123547049!5m2!1sru!2sca" width="1850px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.5972137050517!2d27.617448576997393!3d53.95666172888304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf49b7b52a03%3A0xb2fa2d0071cca5b2!2z0JfQkNCT0KEg0KHQvtCy0LXRgtGB0LrQvtCz0L4g0YDQsNC50L7QvdCwINCzLiDQnNC40L3RgdC60LA!5e0!3m2!1sru!2sca!4v1710123547049!5m2!1sru!2sca" width="1500px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
-      </div>
 
       <div class="map-astoria" id="dinner">
         <h2>Свадебный ужин</h2>
-        <p>Ресторан Astoria Riverside</p>
-        <p>г. Минск, ул. Гамарника, 2</p>
+        <p class="adress">Ресторан Astoria Riverside</p>
+        <p class="adress">г. Минск, ул. Гамарника, 2</p>
         <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.061708054503!2d27.453921676997094!3d53.94841172950506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4f14def1333%3A0xb0996dddbead8449!2sAstoria%20Riverside!5e0!3m2!1sru!2sca!4v1710123898778!5m2!1sru!2sca" width="1870" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.061708054503!2d27.453921676997094!3d53.94841172950506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4f14def1333%3A0xb0996dddbead8449!2sAstoria%20Riverside!5e0!3m2!1sru!2sca!4v1710123898778!5m2!1sru!2sca" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </div>
+
+      <div class="end">
+        <p class="confirm">Просьба подтвердить свое участие до 15.04.2024.</p>
+        <h1 class="nameend">
+          НИКОЛАЙ <span style="font-size: 80px; color: rgb(238, 54, 54);">&#10084;</span> ДАРЬЯ
+        </h1>
+      </div>
 
       <script>
         // Задайте новую дату и время свадьбы (год, месяц (от 0 до 11), день, час, минута, секунда)
